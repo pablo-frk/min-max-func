@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Mínimo/Máximo - Função Quadrática</title>
+
+        <link rel="stylesheet" href="stylce.css" />
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <link rel="icon" type="image/x-icon" href="favicon.png" />
+
+        <!-- <link rel="icon" type="image/x-icon" href="/images/favicon.ico"> -->
+    </head>
+    <body>
+        <div id="screen">
+            <div class="card">
+                <div class="content">
+                    <div class="funcao">
+                        <select name="" id="op0" class="select">
+                            <option value="+">+</option>
+                            <option value="-">-</option>
+                        </select>
+                        <input type="number" id="func_a" class="input" />
+                        <select name="" id="op1" class="select">
+                            <option value="+">+</option>
+                            <option value="-">-</option>
+                        </select>
+                        <input type="number" id="func_b" class="input" />
+                        <select name="" id="op2" class="select">
+                            <option value="+">+</option>
+                            <option value="-">-</option>
+                        </select>
+                        <input type="number" id="func_c" class="input" />
+                    </div>
+
+                    <div id="botao">
+                        <input
+                            type="button"
+                            value="CALCULAR"
+                            onclick="tirarValores()"
+                            class="button"
+                            id="title"
+                        />
+                    </div>
+
+                    <div class="res-texts">
+                        <h1 id="res">Resultado abaixo</h1>
+                        <h2 id="abc" class="block"></h2>
+                        <h2 id="direcao_parabola" class="block"></h2>
+                        <h2 id="delta_res" class="block"></h2>
+                        <h2 id="minMax" class="block"></h2>
+                    </div>
+                </div>
+                <canvas
+                    id="parabolaChart"
+                    width="300"
+                    height="300"
+                    class="block"
+                ></canvas>
+            </div>
+            <div class="footer_info">
+                <span>Desenvolvido por: Pablo Silva</span>
+                <br />
+                <span>Orientado por: Roberto Souza</span>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
