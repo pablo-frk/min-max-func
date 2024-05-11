@@ -20,6 +20,10 @@ function tirarValores() {
         alert(
             "Não digite valores negativos. Use os botões para determinar se o valor é positivo ou negativo!"
         );
+    } else if (a == 0) {
+        alert(
+            "O coeficiente a não pode ser 0, atribua outro valor pois a função não seria quadrática."
+        );
     } else {
         displayBlock();
         a = Number(a); // Converte para número após verificar se não está vazio
