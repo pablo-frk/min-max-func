@@ -60,15 +60,19 @@ function tirarValores() {
                 "Coeficiente 'a' negativo.<br> Concavidade para baixo!";
         }
 
-        minMax.innerHTML = `
-        Mínimo/Máximo:<br>
-        x = ${xVertice.toFixed(2)},<br>
-        y = ${yVertice.toFixed(2)}  
-        `;
+
+        if ( a > 0) {
+            minMax.innerHTML = `O minimo da função ocorre no:<br> 'y' = ${yVertice.toFixed(2)}`;
+        } else if ( a < 0 ) {
+            minMax.innerHTML = `O máximo da função ocorre no:<br> 'y' = ${yVertice.toFixed(2)}`;
+        }
+   
 
         desenharParabola(a, b, c);
     }
 }
+// Mínimo/Máximo:<br>
+// x = ${xVertice.toFixed(2)},<br>
 
 function displayBlock() {
     let blocks = document.getElementsByClassName("block");
